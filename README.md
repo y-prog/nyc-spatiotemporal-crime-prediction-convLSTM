@@ -30,7 +30,15 @@ The dataset contains approximately:
 6,983,207 rows
 ```
 
-Because of its size, the raw dataset is not included in this repository.
+The original dataset is preprocessed here:  
+
+however, its preprocessed version can be retrieved and downloaded here:
+
+https://www.kaggle.com/datasets/ydg886/nyc-crime-preprocessed-data
+
+so that the streamlit application can be ran on its own without the need of running the notebook
+
+Because of their size, both dataset are not included in this repository.
 
 ---
 
