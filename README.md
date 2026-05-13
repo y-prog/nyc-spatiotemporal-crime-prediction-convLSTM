@@ -71,14 +71,8 @@ nyc-spatiotemporal-crime-prediction-convlstm/
 │   └── app.py
 │
 ├── models/
-│   └── model.keras
-│
-├── data/
-│   ├── processed_data.csv
-│   └── raw/
-│
-└── docs/
-    └── methodology.md
+   └── model.keras
+
 ```
 
 ---
