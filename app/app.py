@@ -27,7 +27,7 @@ def load_data():
     """
     Load and preprocess crime dataset.
     """
-    df = pd.read_csv("processed_data.csv")
+    df = pd.read_csv("../datasets/processed_data.csv")
 
     # Convert datetime column
     df["datetime"] = pd.to_datetime(df["datetime"])
@@ -44,7 +44,7 @@ def load_model():
     from tensorflow.keras.initializers import Orthogonal
 
     model = tf.keras.models.load_model(
-        "model.keras",
+        "../models/model.keras",
         compile=False,
         custom_objects={"Orthogonal": Orthogonal}
     )
