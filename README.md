@@ -16,6 +16,12 @@ The project includes:
 - model evaluation
 - interactive GIS visualization
 
+## GIF Demonstration
+
+This animation provides a preview of the Streamlit application, showing the interactive crime hotspot prediction interface the user will experience when running the project locally.
+
+![Crime Prediction Demo](assets/demo.gif)
+
 ---
 
 ## Dataset
@@ -71,7 +77,10 @@ nyc-spatiotemporal-crime-prediction-convlstm/
 │   └── app.py
 │
 ├── models/
-   └── model.keras
+│   └── model.keras
+│
+├── assets/
+   └── demo.gif
 
 ```
 
