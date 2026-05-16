@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import tensorflow as tf
+from tensorflow.keras.initializers import Orthogonal
 
 # =========================================================
 # PAGE CONFIGURATION
@@ -28,10 +29,8 @@ def load_data():
     Load and preprocess crime dataset.
     """
     df = pd.read_csv("../datasets/processed_data.csv")
-
     # Convert datetime column
     df["datetime"] = pd.to_datetime(df["datetime"])
-
     return df
 
 
@@ -41,14 +40,11 @@ def load_data():
 
 @st.cache_resource
 def load_model():
-    from tensorflow.keras.initializers import Orthogonal
-
     model = tf.keras.models.load_model(
         "../models/model.keras",
         compile=False,
         custom_objects={"Orthogonal": Orthogonal}
     )
-
     return model
 
 
